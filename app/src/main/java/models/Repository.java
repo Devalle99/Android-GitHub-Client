@@ -1,10 +1,11 @@
 package models;
 
 import com.google.gson.annotations.SerializedName;
+import java.io.Serializable;
 
 import retrofitclient.GithubApiClient;
 
-public class Repository {
+public class Repository implements Serializable {
     private long id;
     @SerializedName("name")
     private String repositoryName;
